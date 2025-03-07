@@ -1,0 +1,32 @@
+/* Com o código abaixo, quando a tela aparecer em dispositivos com menos de 600px de largura, a margem esquerda seja zerada, tirando assim a barra de navegação*/
+@media only-screen and (max-width:600px) {#main {margin-left: 0}}
+
+/*Definique a sidebar terá uma largura de 120px e a cor de fundo #222 */
+
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+body, h1, h2, h3, h4, h5, h6 {font-family: 'Montserrat';}
+
+.loucura {
+    margin-left: -9px;
+}
+
+#main {
+    margin-left: 120px;
+}
+
+.w3-row-padding img {margin-bottom: 12px;}
+
+/*FAZENDO EFEITO COM HOVER NOS ÍCONES DE LINGUAGENS*/
+.w3-row a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.w3-row a:hover img {
+    transform: scale(1.1) rotate(5deg); /* Aumenta e gira levemente */
+    box-shadow: 0px 0px 15px rgba(5, 165, 214, 0.7); /* Brilho ciano */
+    filter: brightness(1.2); /* Aumenta o brilho */
+}

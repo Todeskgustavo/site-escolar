@@ -7,34 +7,8 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>GEEAD - Técnico em Desenvolvimento de Sistemas</title>
-    
-
-    <style>
-    /* Com o código abaixo, quando a tela aparecer em dispositivos com menos de 600px de largura, a margem esquerda seja zerada, tirando assim a barra de navegação*/
-    @media only-screen and (max-width:600px) {#main {margin-left: 0}}
-
-    /*Definimos que a sidebar terá uma largura de 120px e a cor de fundo #222 */
-
-    .w3-sidebar {
-        width: 120px;
-        background: #222;
-    }
-
-    body, h1, h2, h3, h4, h5, h6 {font-family: 'Montserrat';}
-
-    .loucura {
-        margin-left: -9px;
-    }
-
-    #main {
-        margin-left: 120px;
-    }
-
-    .w3-row-padding img {margin-bottom: 12px;}
-
-
-</style>
 </head>
 <body class="w3-black">
         <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small">
@@ -99,7 +73,7 @@
         </div>
 
         <div class="w3-content w3-padding-64" id="sobre">
-            <h2 class="w3-text-cyan">Sobre o Curso</h2>
+            <h2 class="w3-text-cyan" id="typing">Sobre o Curso</h2>
             <hr style="width:200px" class="w3-opacity">
             <ul class="w3-ul w3-hoverable w3-center w3-white">
                 <li class="w3-cyan w3-large w3-padding-32">O curso tem como objetivo capacitar o aluno para:</li>
@@ -212,6 +186,10 @@
                 </div>
             </div>
 
+        <div class="w3-row w3-row-padding">
+            <div class="w3-content w3-display-container w3-center">
+
+
             <div class="slides w3-row w3-padding w3-margin-botton">
                 <div class="w3-half w3-margin-botton">
                     <img src="IMG/avatar mulher.png" alt="avatar executivo" class="w3-image w3-opacity w3-hover-opacity-off">
@@ -224,6 +202,10 @@
                     <p>Trabalha atualmente como Tradutora de uma importante Editora de livros, mais conhecida como Editora Rocco, desde 2018.</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+
             <button class="w3-button w3-cyan w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-cyan w3-display-right" onclick="plusDivs(1)">&#10095;</button>
             <!--Parte do slide show manual-->
@@ -273,7 +255,7 @@
             </p>
 
             <p>
-                Além disso, em apresentação ocorrida durante o seminário "Governo e o setor
+                >Além disso, em apresentação ocorrida durante o seminário "Governo e o setor
                 de TI - Garantia de Inovação, Produtividade
                 e Segurança”, em Brasília, a expectativa era de que                 no segundo semestre de
                 2015, o setor de TI tivesse um
@@ -383,4 +365,5 @@
             </div>
         </footer>
 </body>
+<script src="script.js"></script>
 </html>
